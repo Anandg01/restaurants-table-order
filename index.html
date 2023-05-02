@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+</head>
+<body>
+ <form onsubmit="onFormSubmit(event)">
+    <label for="orderPrice">Choose Price</label>
+    <input type="number" id="orderPrice">
+    <label for="orderDish">Choose Dish</label>
+    <input type="text"  id="orderDish">
+<label for="tableN">Choose a Table</label>
+    <select  id="tableN">
+        <option value="Table1">Tabel 1</option>
+        <option value="Table2">Tabel 2</option>
+        <option value="Table3">Tabel 3</option>
+        <option value="Table4">Tabel 4</option>
+    </select>
+    <button type="submit">Add Bil</button>
+</form>   
+
+<div>
+<h3>Table 1</h3>
+<ul id="Table1"></ul>
+<h3>Table 2</h3>
+<ul id="Table2"></ul>
+<h3>Table 3</h3>
+<ul id="Table3"></ul>
+<h3>Table 4</h3>
+<ul id="Table4"> </ul>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
